@@ -2,23 +2,26 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fail Log</title>
-
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+
   <div class="navbar-fixed z-depth-3">
     <nav>
       <div class="nav-wrapper red">
         <a href="#" class="brand-logo">FailLog</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <input id="search" class="white-text" type="search" placeholder="search">
+          </li>
           <li>
             <div id="username">Username</div>
           </li>
@@ -29,12 +32,14 @@
       </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div id="username">Username</div>
-          </li>
-          <li><img id="profile-image" src="./images/profile_placeholder.png" class="responsive-img" /></li>
-          <li><a class="waves-effect waves-light btn" id="signout">signout</a></li>
-          <li><a class="waves-effect waves-light btn" id="signin">sign in with google</a></li>
+      <li>
+        <input id="search" class="white-text" type="search" placeholder="search">
+      </li>
+      <li>
+        <div id="username">Username</div>
+      </li>
+      <li><img id="profile-image" src="./images/profile_placeholder.png" class="responsive-img" /></li>
+      <li><a class="waves-effect waves-light btn">signout</a></li>
     </ul>
   </div>
 
@@ -43,17 +48,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-  <script src="./js/firebase-config.js"></script>
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/5.4.2/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/5.4.2/firebase-auth.js"></script>
-  <script defer src="/__/firebase/5.4.2/firebase-database.js"></script>
-  <script defer src="/__/firebase/5.4.2/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/5.4.2/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
   <script src="js/init.js"></script>
 </body>
 

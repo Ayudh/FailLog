@@ -17,6 +17,15 @@ body {
   margin-right: 10px;
 }
 
+#time_stamp {
+  margin-top: 1px;
+}
+
+.material-icons {
+  margin-right: 4px;
+  color: white;
+}
+
 /* [start] custom scrollbar */
 /* width */
 ::-webkit-scrollbar {

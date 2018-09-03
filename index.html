@@ -34,16 +34,72 @@
       </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li>
-            <div id="username">Username</div>
-          </li>
-          <li><img id="profile-image" src="./images/profile_placeholder.png" class="responsive-img" /></li>
-          <li><a class="waves-effect waves-light btn" id="signout">signout</a></li>
-          <li><a class="waves-effect waves-light btn" id="signin">sign in with google</a></li>
+      <li>
+        <div id="username">Username</div>
+      </li>
+      <li><img id="profile-image" src="./images/profile_placeholder.png" class="responsive-img" /></li>
+      <li><a class="waves-effect waves-light btn" id="signout">signout</a></li>
+      <li><a class="waves-effect waves-light btn" id="signin">sign in with google</a></li>
     </ul>
   </div>
 
-  <div style="height: 2000px;"></div>
+  <div class="container" id="log_container">
+    <div class="row" id="sometext">
+      <div class="card blue-grey darken-1 z-depth-5 white-text">
+        <div class="card-panel blue-grey">
+          <span class="right" id="time_stamp">Tuesday</span><label for="time_stamp" class="right"><i class="material-icons">access_time</i></label>
+          <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          <div id="tags">
+            <div class="chip">Tag</div>
+            <div class="chip">Tag</div>
+            <div class="chip">Tag</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large waves-effect waves-default pulse modal-trigger" href="#modal_create" id="add_button">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal_create" class="modal">
+    <div class="modal-content">
+      <h4>Create new...</h4>
+      <div class="row">
+        <div class="col s6">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix black-text">date_range</i>
+              <input type="text" id="date_picker" class="datepicker" placeholder="date">
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix black-text">access_time</i>
+                <input type="text" id="time_picker" class="timepicker" placeholder="time">
+              </div>
+            </div>
+        </div>
+      </div>
+      <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix black-text">mode_edit</i>
+              <textarea id="log_content" class="materialize-textarea"></textarea>
+              <label for="log_content">Content</label>
+            </div>
+          </div>
+        </form>
+        <div class="chips chips-placeholder" id="tag_input"></div>
+        <br>
+        <button class="btn" id="log_create_button">Submit</button>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Compiled and minified JavaScript -->
